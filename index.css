@@ -1,0 +1,415 @@
+
+*,body,header,nav,ul,li,div,p{
+ padding: 0px;
+ margin: 0px;
+ 
+}
+
+body{
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,9,121,0.9108237044817927) 28%, rgba(0,1,255,0.5438769257703081) 100%);
+ overflow-x: hidden;
+ font-family: 'Spline Sans Mono', sans-serif !important;
+ 
+}
+
+/* body div{
+ overflow-x: hidden;
+} */
+header {
+ display: flex;
+ flex-direction: row;
+ 
+ color: #fff;
+}
+nav{
+ width: 80%;
+ align-self: flex-start;
+}
+.name{
+ align-self: center;
+ font-size: 23px;
+ font-weight: bold;
+}
+nav ul li{
+ list-style: none;
+ display: inline-flex;
+ padding: 24px;
+
+}
+nav ul li a, nav ul li a:hover{
+ text-decoration: none;
+ color: inherit;
+}
+nav ul li:hover{
+ opacity: 0.5;
+ cursor: pointer;
+}
+.selfintro{
+ background: #b7bbbdf0;
+ margin: 5%;
+ padding: 3%;
+ border-radius: 30px;
+ display: flex;
+ flex-direction: row;
+}
+.sec{
+ overflow-x: hidden;
+}
+.selftxt {
+ width: 60%;
+}
+.selftxt p{
+ line-height: 45px;
+
+}
+.avator-wrapper {
+ flex-basis: 40%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+h3.role{
+ color: #7173fb;
+ font-weight: bold;
+ font-size: 33px;
+}
+.selftxt {
+ width: 60%;
+}
+.avator img{
+ max-width: 212px;
+ align-items: center;
+ top: -90px;
+ position: relative;
+}
+
+/* .exp {
+ background: #b7bbbdf0;
+ margin: 27px;
+ text-align: center;
+ border-radius: 30px;
+ margin: 5%;
+ padding: 3%;
+} */
+.col-sec {
+ text-align: left;
+ position: relative;
+ margin-bottom: 17px;
+ margin-top: 17px;
+}
+.col-sec::after {
+ content: "";
+ width: 10px;
+ height: 10px;
+ background: #2a1f81;
+ position: absolute;
+ right: -6px;
+}
+.col-sec::before {
+ content: "";
+ width: 10px;
+ height: 10px;
+ background: #2a1f81;
+ position: absolute;
+ right: -6px;
+}
+.exp-cont-right .col-sec::before{
+ left: -6px;
+}
+.exp-cont-right .col-sec::after{
+ left: -6px;
+}
+.company-block {
+ display: flex;
+ justify-content: space-between;
+}
+.col-sec p{
+ padding-bottom: 10px;
+}
+.exp-cont{
+ max-width: 51%;
+}
+.exp-cont,.exp-cont-right{
+ margin-bottom: 13px;
+}
+.left-path{
+ padding-right: 8%;
+ margin-right: 7.4%;
+ border-right: 3px solid #6b6ef3;
+}
+.exp-cont-right{
+ width: 53%;
+}
+.exp-cont-right .col-sec
+{
+ padding-left: 6%;
+ border-left: 3px solid #6b6ef3;
+}
+.btn-primary{
+ background-color: #6b6ef3;
+ border: none;
+ border-radius: 0px;
+}
+.btn-wrapper-left{
+ width: 100%;
+ text-align: right;
+ padding-right: 7.4%;
+ animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
+.btn-wrapper-right{
+ width: 100%;
+ text-align: left;
+ animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
+.fa{
+ color: #2a1f81;
+ font-weight: bold;
+}
+.exp h3{
+ padding-bottom: 30px;
+}
+
+.sec{
+ background: #b7bbbdf0;
+ margin: 5%;
+ padding: 3%;
+ border-radius: 30px;
+ text-align: center;
+
+}
+.edu {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.master {
+ padding: 0 24px;
+ text-align: center;
+ position: relative;
+}
+.master p {
+ padding: 6px 0;
+}
+.master:hover{
+ opacity: 0.5;
+}
+.master::after {
+ content: '';
+ background: #7073fa;
+ position: absolute;
+ height: 90px;
+ width: 2px;
+ top: 34px;
+ right: -20px;
+}
+.master:last-child::after{
+ width:0px
+}
+.master p:first-child{
+ color: #2a1f81;
+}
+.skills{
+ text-align: left;
+}
+.skills p{
+ font-weight: bold;
+ padding-top: 15px;
+}
+
+.skills .bi{
+ color: #21186c;
+ 
+}
+.skills-wrapper {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+.jobs i.fa{
+ font-size: 50px;
+}
+
+.pro-wrapper {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+.proj-content {
+ background: #fff;
+ margin: 16px;
+ padding: 33px 10px;
+ border-radius: 20px;
+ flex-basis: 31%;
+}
+.proj-content p {
+ padding-top: 15px;
+}
+.proj-content .desc > p:first-child, .proj-content a{
+ font-weight: bold;
+}
+.proj-content a{
+ color: #7073fa;
+ 
+}
+.proj-content.animate__bounceInRight{
+ animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
+.proj-content.animate__bounceInLeft{
+ animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
+footer {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 10px 60px;
+ background: #05022a;
+}
+footer i.fa{
+ color: #fff;
+}
+.fa-map-marker:before {
+ content: "\f59f";
+}
+.fa-calendar:before {
+ content: "\f073";
+}
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background: #6e71f7;
+ z-index: 99;
+ box-shadow: -4px 4px 9px #000;
+}
+i.fa.pl-20 {
+ padding-left: 20%;
+}
+.bi-star-fill.animate__bounceInRight.one{
+ animation-duration: 2s; /* don't forget to set a duration! */
+}
+.bi-star-fill.animate__bounceInRight.two{
+ animation-duration: 2.1s; /* don't forget to set a duration! */
+}
+.bi-star-fill.animate__bounceInRight.three{
+ animation-duration: 2.2s; /* don't forget to set a duration! */
+}
+.bi-star-fill.animate__bounceInRight.four{
+ animation-duration: 2.3s; /* don't forget to set a duration! */
+}
+.bi-star.animate__bounceInRight.five{
+ animation-duration: 2.4s; /* don't forget to set a duration! */
+}
+.menu-icon, .close{
+ display: none;
+}
+.skills > p {
+ color: #271c79;
+}
+@media screen and (max-width:864px){
+ header{
+ flex-direction: column-reverse;
+ }
+ 
+ nav {
+ width: 100%;
+ display: none;
+ color: #7073fa;
+ position: absolute;
+ background: #fff;
+ top: 0;
+ z-index: 99;
+ 
+ }
+ .close{
+ display: block;
+ font-size: 30px;
+ color: #7073fa;
+ position: absolute;
+ top: 10px;
+ right: 11px;
+ }
+ 
+ nav ul li{
+ display: block;
+ }
+ .menu-icon{
+ display: block;
+ font-size: 30px;
+ padding-left: 20px;
+
+ }
+ .menu-icon .fa-bars{
+ color: #fff;
+ }
+ .name {
+ 
+ font-size: 23px;
+ padding-top: 10px;
+ }
+ .skills-wrapper{
+ justify-content: space-between;
+ }
+ .skills{
+ flex-basis: 50%;
+ }
+ .edu{
+ flex-direction: column;
+ }
+ .master::after{
+ content:none;
+ }
+ .master{
+ padding-bottom: 12px;
+ }
+ .sec,.selfintro{
+ margin: 1%;
+ }
+}
+@media screen and (max-width:746px) {
+ .pro-wrapper{
+ flex-direction: column;
+ }
+ .exp-cont,.exp-cont-right{
+ max-width: 100%;
+ width: 100%;
+ }
+ .selfintro{
+ flex-direction: column;
+ 
+ }
+ .selftxt{
+ width: 100%; 
+ }
+ .avator img{
+ top: 0;
+ }
+ h3.role{
+ padding-top: 20px;
+ }
+ .skills{
+ flex-basis: 100%;
+ }
+}
+@media screen and (max-width:520px) {
+ .skills-wrapper{
+ flex-wrap: wrap;
+ }
+ .skills {
+ flex-basis: 40%;
+ }
+ footer{
+ flex-direction: column;
+ }
+
+}
+@media screen and (max-width:420px) {
+ .left-path{
+ margin-right: 0;
+ }
+}
